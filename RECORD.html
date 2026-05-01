@@ -1,0 +1,539 @@
+<html> 
+    <head>
+          <title>R3C0RDZ_0062_95</title>
+            
+<style>
+
+@font-face {
+    font-family: 'VintageMoon';
+    src: url('fonts/Vintage\ Moon\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	overflow: hidden;
+	font-family:  "WebPlus_IBM_VGA_8x16", Inconsolata, monospace;
+	font-weight:normal;
+	font-style:normal;
+	font-size: 1em;
+	color: #000000;
+    background-color: #000000;
+    background-image: url(https://media.giphy.com/media/4heseFMvObk9q/giphy.gif?cid=790b7611etr1sfv708fet09vvqdt7shpnxqvzmrcb5tw2nns&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    cursor: url(cursors/point.cur), auto;
+}
+
+.crt-frame {
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: url(cursors/point.cur), auto;
+}
+
+.scanline {
+    width: 100%;
+    height: 100px;
+    z-index: 8;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(255, 255, 255, 0.2) 10%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    opacity: 0.1;
+    position: absolute;
+    bottom: 100%;
+    animation: scanline 10s linear infinite;
+    pointer-events: none;	
+}
+
+
+@keyframes scanline {
+    0% {
+        bottom: 100%;
+    }
+    80% {
+        bottom: 100%;
+    }
+    100% {
+        bottom: 0%;
+    }
+}
+
+.cristal {
+    pointer-events: none;	
+    overflow: hidden;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 60%;
+    cursor: url(cursors/point.cur), auto;
+
+	background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 3px, 2px 100%;
+	
+}
+/* INSIDE TV */
+
+#screen {
+    position: relative;
+	background-image: url(https://media.giphy.com/media/4heseFMvObk9q/giphy.gif?cid=790b7611etr1sfv708fet09vvqdt7shpnxqvzmrcb5tw2nns&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-color: #000000;
+    padding: 5px 5px 5px 5px;
+    width: 92%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: auto;
+    overflow: hidden;
+    cursor: url(cursors/point.cur), auto;
+    font-family: "WebPlus_IBM_VGA_8x16", Inconsolata, monospace;
+	font-size: 24px;
+	text-shadow: 0 0 5px #707070;
+	animation: textShadow 0.15s infinite;
+    cursor: url(cursors/point.cur), auto;
+}
+
+        .wrapper {
+    width: 93%;
+    height: 93%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(0, 0, 0);
+    background-image: url(images/blurbg.png);
+    filter: sepia(20%) brightness(120%) hue-rotate(35deg) saturate(120%) contrast(101%);
+    background-size: cover; 
+    background-position: top left; 
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+        position: relative;
+        width: 100%;
+        height: 5px;
+        background-color: #000000;
+        color: rgb(0, 0, 0);
+        margin: 10px 0px 8px 0px;
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+
+      nav a {
+        margin: 0 16px;
+        padding: 6px;
+        color: #1fc708;
+        text-decoration: none;
+        font-family: 'VintageMoon', sans-serif;
+        background-color: #000000;
+        letter-spacing: 1px;
+        text-align: center;
+        height: 50px;
+        width: 70px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        z-index: 5;
+        transform: translate(0px, -12px) !important;
+      }
+
+      nav a:hover {
+        color: #ffffff;
+        cursor: url(cursors/point.cur), auto;
+      }
+
+      marquee {
+        position: absolute;
+        color: #1fc708;
+        opacity: 30%;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        font-size: 24px;
+        z-index: 0; 
+        pointer-events: none;	
+        animation: textShadow 3s infinite;
+}
+        img {
+            position: absolute;
+            display: block;
+            cursor: pointer;
+            transition: opacity 0.3s ease, transform 0.3s ease; 
+        }
+
+
+        #backbutton {
+        position: absolute;
+        top: 5% !important;
+        left: 4% !important;  
+        cursor: url(cursors/point.cur), auto;
+}
+
+#backbutton img { 
+  width: 120px;
+  height: auto;
+  z-index: 2;
+  filter: sepia(20%) brightness(90%) hue-rotate(35deg) saturate(120%) contrast(101%);
+  cursor: url(cursors/point.cur), auto;
+}
+    button:hover img {
+      transform: scale(1.1);
+      cursor: url(cursors/point.cur), auto;
+    }
+
+
+    /*album menu selection thing*/
+    .select {
+      width: 7%;
+      height: 90%;
+      display: flex;
+      justify-content: flex-start; /*aligns the pictures nicely, from the top of the box*/
+      align-items: center;
+      background-color: #0f0101;
+      border-radius: 8px;
+      padding: 20px;
+      z-index: 4;
+    }
+
+    .table { /* binary background bit. its called table because it was originally a wooden table texture. change of plans! */
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNndieXFnbXRoYmx5OW85NXpkdjJoNGlxazBud2JtZG9uZG9ibGpmcyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/V4NSR1NG2p0KeJJyr5/giphy.gif);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .expl { /*big box for the explanations and everything to fit nicely in*/
+      height: 90%;
+      width: 90%;
+      background-color: #000;
+      margin: 10px;
+      padding: 20px 20px 20px 20px;
+      border-radius: 8px;
+      position: relative;
+      cursor: url(cursors/point.cur), auto;
+    }
+
+    .expl p {
+      clear: both; /*makes it wrap nicely if i were to write more information*/
+      margin-top: 20px;
+      cursor: url(cursors/point.cur), auto;
+    }
+
+    .recordplayer { /* record player image */
+      float: right; 
+      position: absolute;
+      bottom: 52%;
+      right: 36.5%;
+      padding: 20px;
+      border-radius: 8px;
+      z-index: 9999;
+      cursor: url(cursors/point.cur), auto;
+    }
+
+    .flexbox-container { /* the container just for the images. */
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      z-index: 4;
+      cursor: url(cursors/point.cur), auto;
+    }
+
+    .flexbox-container img { /*album covers*/
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+      transition: transform 0.3s ease;
+      z-index: 900;
+      position: relative;
+      cursor: url(cursors/point.cur), auto;
+    }
+
+    .flexbox-container img:hover { /*makes them get bigger when you hover on them*/
+      transform: scale(1.1);
+      cursor: url(cursors/point.cur), auto;
+    }
+
+    #expl img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      z-index: 4;
+      cursor: url(cursors/point.cur), auto;
+    }
+
+    .connection-block { /*slidy block thing between the album selection box and the explanation box*/
+      position: absolute;
+      width: 1.5%;
+      height: 4.7%;
+      background-color: #000000;
+      z-index: 0 !important;
+      opacity: 0;
+      transition: all 0.3s ease;
+      visibility: hidden; /* hides it initially */
+      cursor: url(cursors/point.cur), auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 170%;
+      left: 170%;
+      visibility: hidden; /* hides it initially */
+      opacity: 0; /* makes it invisible initially. i now see these are a little redundant.  */
+      transition: opacity 0.3s ease;
+      cursor: url(cursors/point.cur), auto;
+    }
+
+    .overlay.spin {
+      animation: spin 4s infinite linear;
+      cursor: url(cursors/point.cur), auto;
+      /* spins forever until js tells it to stop */
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    h1{
+      font-size: 45px;
+      margin-left: 20px;
+      color: #1fc708;
+    }
+
+    p{
+      font-size: 20px;
+      margin-left: 20px;
+      color: #6ac25f;
+    }
+
+</style>
+        </head>
+        <body>
+            <img class="crt-frame" src="images/crt.png">
+            <div id="screen"> 
+
+                <nav>
+
+                    <marquee> 01000111 01000101 01010100 00100000 01001101 01000101 00100000 01001111 01010101 01010100 00100000 01001111 01000110 00100000 01001000 01000101 01010010 01000101 </marquee>
+
+                    <a href="#home">Buttons</a>
+                    <a href="#about">Don't</a>
+                    <a href="#contact">Work</a>
+                  </nav>
+
+                  <button id="backbutton" style="border: black; padding: 0; background: none; width: 20%;" onclick="window.location.href='HOME.html'">
+                    <img src="images/backbutton.png" style="transition: transform 0.3s;">
+                  </button>
+              
+                <div class="wrapper">
+
+                    <div class="table">
+                        <div class="select">
+                    
+                          <div class="flexbox-container">
+                            <img src="images/1.png" data-title="First It Giveth - Queens of the Stone Age" data-info="This is the first QOTSA song I ever listened to."
+                              data-overlay="images/r1.png"> <!-- input info for each song right in html -->
+                            <img src="images/2.png" data-title="Destroyed By Hippie Powers - Car Seat Headrest "
+                              data-info="My favourite Car Seat Headrest song. It makes me sad but I like the part where he goes 'WHOO'. " data-overlay="images/r2.png">
+                            <img src="images/3.png" data-title="Dead & Bloated - Stone Temple Pilots" data-info="I'm singing this song for rtf. It makes me want to throw up."
+                              data-overlay="images/r3.png">
+                            <img src="images/4.png" data-title="Jigsaw Falling Into Place - Radiohead" data-info="My favourite album, and maybe my third favourite song on it."
+                              data-overlay="images/r4.png">
+                            <img src="images/5.png" data-title="Milkshake - Pile" data-info="This song makes me really sad. Pile is awesome sauce."
+                              data-overlay="images/r5.png">
+                            <!--  <img src="images/6.png" data-title="Mexicola - Queens of the Stone Age" data-info="My favouritest Queens song. I like the bassline. I can play it."
+                              data-overlay="images/r6.png" IM GONNA USE THIS SITE AFTER SO IM GONNA FIX THESE LITTLE THINGS LATER!! BUT ITS STILL AWESOME SAUCE (plus the album cover had boobies on it)>-->
+                            <img src="images/7.png" data-title="Do You Realize?? - The Flaming Lips" data-info="This song makes me sadder. I did not get to see them live with weezer which is lame. I hate weezer."
+                              data-overlay="images/r7.png">
+                            <audio id="audio-player" hidden></audio>
+                          </div>
+                        </div>
+                    
+                        <div class="expl" id="expl">
+                          <h1>Krow's Record Collection</h1>
+                          <p>Now, normally I collect CD's... but I figured records would look much better. Each song is significant, click to listen and find out why!</p>
+                          <img
+                            src="https://media.giphy.com/media/cmPA9le1um008eTxL7/giphy.gif?cid=790b7611vvjzubq7qgaddar42mzkx4nz0qf4xfdbo5swfczd&ep=v1_stickers_search&rid=giphy.gif&ct=s"
+                            id="expl-image">
+                    
+                          <!-- the record player inside the expl div -->
+                          <div class="recordplayer">
+                            <img src="images/player.png" style="width: 1200%; height: auto;">
+                            <!-- the record player image itself-->
+                            <img id="overlay-image" class="overlay" src="" style="height: auto; width: 280px; ">
+                            <!-- the spinny record image thing that changes when u hover and click and all that jazz-->
+                          </div>
+                        </div>
+                      </div>
+
+                     <script>
+    const explDiv = document.getElementById("expl"); // finds the explanation
+    const explImage = document.getElementById("expl-image"); // finds the explanation image (the album cover that is selected)
+    const overlayImage = document.getElementById("overlay-image"); // finds the record
+    const audioPlayer = document.getElementById("audio-player"); // finds the audio player to play the songs on
+    const defaultTitle = "Krow's Record Collection"; // had to make it the same as the <h1> or it be all weird
+    const defaultText = "Now, normally I collect CD's... but I figured records would look much better. Each song is significant, click to listen and find out why!"; // same with the <p>
+    const defaultImageSrc = "https://media.giphy.com/media/cmPA9le1um008eTxL7/giphy.gif?cid=790b7611vvjzubq7qgaddar42mzkx4nz0qf4xfdbo5swfczd&ep=v1_stickers_search&rid=giphy.gif&ct=s"; // jumping cat picture
+
+    let isLocked = false; // checks if one of the albums is clicked and locked 
+    let lockedContent = { text: defaultText, imgSrc: defaultImageSrc, title: defaultTitle }; // makes the explanation and picture and all that stay when its locked
+
+    // this is whats making the little block slide and connects the album selection menu to the explanation div
+    const connectionBlock = document.createElement('div');
+    connectionBlock.classList.add('connection-block');
+    document.body.appendChild(connectionBlock); // connects the connection block to the body
+
+    function updateExpl(title, content, imgSrc) {
+      // Update the title
+      explDiv.querySelector("h1").textContent = title;
+
+      // puts thindividual explanation for each image in the expl box
+      let contentParagraph = explDiv.querySelector("p");
+      if (!contentParagraph) {
+        contentParagraph = document.createElement("p");
+        explDiv.appendChild(contentParagraph);  // makes the <p> connected to the content div 
+      }
+      contentParagraph.textContent = content;  // updates what the explanation says
+
+      // changes the little picture for each explanation
+      explImage.src = imgSrc;
+    }
+    function updateConnectionBlockPosition(img, index, images) {
+      const selectDiv = document.querySelector('.select');
+      const selectRect = selectDiv.getBoundingClientRect();
+      const rect = img.getBoundingClientRect();
+
+      connectionBlock.style.left = `${rect.right + 10}px`; // Position to the right of the image
+
+      if (index === 0) { // if its focused on the top image
+        connectionBlock.style.top = `${selectRect.top - 0}px`; // aligns the block with the top of the select an expl div. i just think it looks nicer this way.
+        connectionBlock.style.height = '130px';
+      } else if (index === images.length - 1) { // bottom image
+        connectionBlock.style.top = `${selectRect.bottom - 130}px`; // aligns it with the bottom if you're hovered on the bottom image. again it just looks better.
+        connectionBlock.style.height = '130px';
+      } else { // all the other images in between
+        connectionBlock.style.top = `${rect.top + (rect.height / 2) - 60}px`; // for the rest of them i just aligned it in the middle of the image.
+        connectionBlock.style.height = '120px';
+      }
+
+      connectionBlock.style.visibility = 'visible'; // makes the block show up 
+      connectionBlock.style.opacity = 1;
+    }
+
+    function resetExpl() {
+      updateExpl(defaultTitle, defaultText, defaultImageSrc); // resets the <h1> <p> and image and all that jazz to the normal one when the album cover isnt being hovered/clicked on
+      overlayImage.style.visibility = 'hidden'; // hides the record overlay on the player
+      overlayImage.style.opacity = 0;
+      overlayImage.classList.remove('spin'); // stops the record from spinning
+      connectionBlock.style.visibility = 'hidden'; // hides the connection blocks
+      connectionBlock.style.opacity = 0;
+
+      // stops playing the audio when an expl/image isnt locked in place. didnt rlly want the songs to play when they were hovered on. headache no thank you.
+      audioPlayer.pause();
+      audioPlayer.currentTime = 0;
+    }
+
+    // this is the hover part. when the mouse enters the image it makes all the fancy magic happen
+    document.querySelectorAll(".flexbox-container img").forEach((img, index, images) => {
+      img.addEventListener("mouseenter", () => {
+        if (!isLocked) {
+          const info = img.getAttribute("data-info"); // grabs the specific info about the image being hovered on
+          const title = img.getAttribute("data-title"); // grabs the title of it too
+          const src = img.src;  // gets the right little picture that is displayed with each explanation
+          updateExpl(title, info, src);
+
+          const overlaySrc = img.getAttribute("data-overlay"); // gets the right record for the album (i custom made them in canva to match the colours (fancy ik))
+          overlayImage.src = overlaySrc; 
+          overlayImage.style.visibility = 'visible';
+          overlayImage.style.opacity = 0.75; // it looks a lot better when the vinyl is a little bit translucent, just like in real life!
+          overlayImage.classList.remove('spin');  // doesnt spin but is still visible on the player, so its ready to spin if the image is clicked on
+
+          updateConnectionBlockPosition(img, index, images); 
+        }
+      });
+
+       // this is the part where an album is clicked on
+      img.addEventListener("click", () => { 
+        const info = img.getAttribute("data-info"); //again, gets the specififc info
+        const title = img.getAttribute("data-title"); //'
+        const src = img.src; //'
+        lockedContent = { text: info, imgSrc: src, title: title };
+        isLocked = true; // locks it in place when its clicked, so it won't move if you hover on something else
+        updateExpl(title, info, src); // updates all the default text to be the new one
+
+        const overlaySrc = img.getAttribute("data-overlay"); // gets the right record
+        overlayImage.src = overlaySrc; 
+        overlayImage.style.visibility = 'visible';
+        overlayImage.style.opacity = 0.75;
+        overlayImage.classList.add('spin'); // makes the record spin while it plays the music
+
+        updateConnectionBlockPosition(img, index, images);
+
+        // plays the song thats on the album
+        const songNumber = index + 1; // so i didnt have to specify another dataset thingy. i named all the songs by number. MUCH easier. 
+        audioPlayer.src = `audio/song${songNumber}.mp3`; 
+        audioPlayer.play();
+        audioPlayer.volume = 0.05;  // was originally ridiculously loud. actually made my ears bleed when i was testing it (not really).
+      });
+
+      img.addEventListener("mouseleave", () => { //if the mouse stop hovering on the image
+        if (!isLocked) { //doesn't do anything if it's locked in place.
+          resetExpl();
+        }
+      });
+    });
+
+    document.addEventListener("click", (event) => { //if you click off of the image
+      if (!event.target.closest(".flexbox-container img")) {
+        isLocked = false; //unlocks the explanation
+        resetExpl(); // resets it to the default text, title, and image
+      }
+    });
+  </script>
+
+                </div>
+              <div class="scanline"></div>
+              <img class="cristal" id="image" src="images/dust.png" style="position: fixed; left:0; top:0">
+          </div>
+
+          </body>
+</html>

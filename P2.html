@@ -1,0 +1,297 @@
+<html> 
+    <head>
+          <title>NUM3T4L_0062_95</title>
+            
+<style>
+
+@font-face {
+    font-family: 'VintageMoon';
+    src: url('fonts/Vintage\ Moon\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	overflow: hidden;
+	font-family:  "WebPlus_IBM_VGA_8x16", Inconsolata, monospace;
+	font-weight:normal;
+	font-style:normal;
+	font-size: 1em;
+	color: #000000;
+    background-color: #000000;
+    background-image: url(https://media.giphy.com/media/4heseFMvObk9q/giphy.gif?cid=790b7611etr1sfv708fet09vvqdt7shpnxqvzmrcb5tw2nns&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    cursor: url(cursors/point.cur), auto;
+}
+
+.crt-frame {
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: url(cursors/point.cur), auto;
+}
+
+.scanline {
+    width: 100%;
+    height: 100px;
+    z-index: 8;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(255, 255, 255, 0.2) 10%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    opacity: 0.1;
+    position: absolute;
+    bottom: 100%;
+    animation: scanline 10s linear infinite;
+    pointer-events: none;	
+}
+
+
+@keyframes scanline {
+    0% {
+        bottom: 100%;
+    }
+    80% {
+        bottom: 100%;
+    }
+    100% {
+        bottom: 0%;
+    }
+}
+
+.cristal {
+    pointer-events: none;	
+    overflow: hidden;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 60%;
+    cursor: url(cursors/point.cur), auto;
+
+	background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 3px, 2px 100%;
+	
+}
+/* INSIDE TV */
+
+#screen {
+    position: relative;
+	background-image: url(https://media.giphy.com/media/4heseFMvObk9q/giphy.gif?cid=790b7611etr1sfv708fet09vvqdt7shpnxqvzmrcb5tw2nns&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-color: #000000;
+    padding: 5px 5px 5px 5px;
+    width: 92%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: auto;
+    overflow: hidden;
+    cursor: url(cursors/point.cur), auto;
+    font-family: "WebPlus_IBM_VGA_8x16", Inconsolata, monospace;
+	font-size: 24px;
+	text-shadow: 0 0 5px #707070;
+	animation: textShadow 0.15s infinite;
+    cursor: url(cursors/point.cur), auto;
+}
+
+        .wrapper {
+    width: 93%;
+    height: 93%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(0, 0, 0);
+    background-image: url(images/blurbg.png);
+    filter: sepia(20%) brightness(120%) hue-rotate(35deg) saturate(120%) contrast(101%);
+    background-size: cover; 
+    background-position: top left; 
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+        position: relative;
+        width: 100%;
+        height: 5px;
+        background-color: #000000;
+        color: rgb(0, 0, 0);
+        margin: 10px 0px 8px 0px;
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+
+      nav a {
+        margin: 0 16px;
+        padding: 6px;
+        color: #1fc708;
+        text-decoration: none;
+        font-family: 'VintageMoon', sans-serif;
+        background-color: #000000;
+        letter-spacing: 1px;
+        text-align: center;
+        height: 50px;
+        width: 70px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        z-index: 5;
+        transform: translate(0px, -12px) !important;
+      }
+
+      nav a:hover {
+        color: #ffffff;
+        cursor: url(cursors/point.cur), auto;
+      }
+
+      marquee {
+        position: absolute;
+        color: #1fc708;
+        opacity: 30%;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        font-size: 24px;
+        z-index: 0; 
+        pointer-events: none;	
+        animation: textShadow 3s infinite;
+}
+        img {
+            position: absolute;
+            display: block;
+            cursor: pointer;
+            transition: opacity 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+        }
+
+
+        #backbutton {
+        position: absolute;
+        top: 5% !important;
+        left: 4.5% !important;
+        cursor: url(cursors/point.cur), auto;
+}
+
+#backbutton img { 
+  width: 200px;
+  height: auto;
+  z-index: 2;
+  filter: sepia(20%) brightness(90%) hue-rotate(35deg) saturate(120%) contrast(101%);
+  cursor: url(cursors/point.cur), auto;
+}
+    button:hover img {
+      transform: scale(1.1);
+      cursor: url(cursors/point.cur), auto;
+    }
+
+    #tiltingImage {    
+  transition: transform 0.2s ease;
+  transform-style: preserve-3d;  
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.9);
+  transition: box-shadow 0.3s ease-in-out; 
+}
+
+#korn {
+            top: 7%;
+            left: 21%;
+            box-shadow: none !important; /* not a square image so the shadow makes it look weird */
+            cursor: url(cursors/point.cur), auto;
+        }
+
+        #pantera {
+            top: 11%;
+            left: 40%;
+            box-shadow: 0 0 15px 5px #00000093;
+            cursor: url(cursors/point.cur), auto;
+        }
+
+        #cc {
+            top: 38%;
+            left: 19%;
+            box-shadow: 0 0 15px 5px #00000093;
+            cursor: url(cursors/point.cur), auto;
+        }
+
+        #deftones {
+            top: 27%;
+            left: 64%;
+            box-shadow: 0 0 15px 5px #00000093;
+            cursor: url(cursors/point.cur), auto;
+        }
+
+</style>
+        </head>
+        <body>
+            <img class="crt-frame" src="images/crt.png">
+            <div id="screen"> 
+
+                <nav>
+
+                    <marquee> 01000111 01000101 01010100 00100000 01001101 01000101 00100000 01001111 01010101 01010100 00100000 01001111 01000110 00100000 01001000 01000101 01010010 01000101 </marquee>
+
+                    <a href="#home">Buttons</a>
+                    <a href="#about">Don't</a>
+                    <a href="#contact">Work</a>
+                  </nav>
+
+                  <button id="backbutton" style="border: black; padding: 0; background: none; width: 20%;" onclick="window.location.href='HOME.html'">
+                    <img src="images/backbutton.png" style="transition: transform 0.3s;">
+                  </button>
+              
+                <div class="wrapper">
+                    <img src="images/korn.png" id="korn" class="tiltingImage" style="width: 18%; height: auto;">
+                    <img src="images/pantera.png" id="pantera" class="tiltingImage" style="width: 21%; height: auto;">
+                    <img src="images/cc.png" id="cc" class="tiltingImage" style="width: 18%; height: auto;">
+                    <img src="images/deftones.png" id="deftones" class="tiltingImage" style="width: 21%; height: auto;">
+                
+                    <script>
+                        // same tilt logic as the first poster.
+                        const images = document.querySelectorAll('.tiltingImage');
+                
+                        images.forEach((image) => {
+                            image.addEventListener('mousemove', (e) => {
+                                const rect = image.getBoundingClientRect();
+                                const x = e.clientX - rect.left; // x position on the poster
+                                const y = e.clientY - rect.top;  // y position on the poster
+                
+                                const xPercent = (x / rect.width) - 0.5; // -0.5 to 0.5 range
+                                const yPercent = (y / rect.height) - 0.5; // also -0.5 to 0.5 range
+                
+                                const tiltFactor = 45; 
+                                const rotateX = yPercent * tiltFactor;
+                                const rotateY = -xPercent * tiltFactor;
+                
+                                image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                            });
+                
+                            image.addEventListener('mouseleave', () => {
+                                image.style.transform = 'rotateX(0deg) rotateY(0deg)';
+                            });
+                        });
+                    </script>
+                    
+                </div>
+              <div class="scanline"></div>
+              <img class="cristal" id="image" src="images/dust.png" style="position: fixed; left:0; top:0">
+          </div>
+
+          </body>
+</html>

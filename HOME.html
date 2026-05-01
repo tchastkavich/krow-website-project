@@ -1,0 +1,582 @@
+<html> 
+    <head>
+          <title>KR0WH0ME_0062_95</title>
+            
+<style>
+
+@font-face {
+    font-family: 'VintageMoon';
+    src: url('fonts/Vintage\ Moon\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	overflow: hidden;
+	font-family:  "WebPlus_IBM_VGA_8x16", Inconsolata, monospace;
+	font-weight:normal;
+	font-style:normal;
+	font-size: 1em;
+	color: #000000;
+    background-color: #000000;
+    background-image: url(https://media.giphy.com/media/4heseFMvObk9q/giphy.gif?cid=790b7611etr1sfv708fet09vvqdt7shpnxqvzmrcb5tw2nns&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    cursor: url(cursors/point.cur), auto;
+}
+
+.crt-frame { /* tv frame */
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: url(cursors/point.cur), auto;
+}
+
+@keyframes textShadow {
+	0% {
+		text-shadow: 0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+			-0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	5% {
+		text-shadow: 2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+			-2.7928974010788217px 0 2px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	10% {
+		text-shadow: 0.02956275843481219px 0 1px rgba(0, 30, 255, 0.5),
+			-0.02956275843481219px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	15% {
+		text-shadow: 0.40218538552878136px 0 1px rgba(0, 30, 255, 0.5),
+			-0.40218538552878136px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	20% {
+		text-shadow: 3.4794037899852017px 0 1px rgba(0, 30, 255, 0.5),
+			-3.4794037899852017px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	25% {
+		text-shadow: 1.6125630401149584px 0 1px rgba(0, 30, 255, 0.5),
+			-1.6125630401149584px 0 2px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	30% {
+		text-shadow: 0.7015590085143956px 0 1px rgba(0, 30, 255, 0.5),
+			-0.7015590085143956px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	35% {
+		text-shadow: 3.896914047650351px 0 1px rgba(0, 30, 255, 0.5),
+			-3.896914047650351px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	40% {
+		text-shadow: 3.870905614848819px 0 1px rgba(0, 30, 255, 0.5),
+			-3.870905614848819px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	45% {
+		text-shadow: 2.231056963361899px 0 1px rgba(0, 30, 255, 0.5),
+			-2.231056963361899px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	50% {
+		text-shadow: 0.08084290417898504px 0 1px rgba(0, 30, 255, 0.5),
+			-0.08084290417898504px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	55% {
+		text-shadow: 2.3758461067427543px 0 1px rgba(0, 30, 255, 0.5),
+			-2.3758461067427543px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	60% {
+		text-shadow: 2.202193051050636px 0 1px rgba(0, 30, 255, 0.5),
+			-2.202193051050636px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	65% {
+		text-shadow: 2.8638780614874975px 0 1px rgba(0, 30, 255, 0.5),
+			-2.8638780614874975px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	70% {
+		text-shadow: 0.48874025155497314px 0 1px rgba(0, 30, 255, 0.5),
+			-0.48874025155497314px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	75% {
+		text-shadow: 1.8948491305757957px 0 1px rgba(0, 30, 255, 0.5),
+			-1.8948491305757957px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	80% {
+		text-shadow: 0.0833037308038857px 0 1px rgba(0, 30, 255, 0.5),
+			-0.0833037308038857px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	85% {
+		text-shadow: 0.09769827255241735px 0 1px rgba(0, 30, 255, 0.5),
+			-0.09769827255241735px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	90% {
+		text-shadow: 3.443339761481782px 0 1px rgba(0, 30, 255, 0.5),
+			-3.443339761481782px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	95% {
+		text-shadow: 2.1841838852799786px 0 1px rgba(0, 30, 255, 0.5),
+			-2.1841838852799786px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+	100% {
+		text-shadow: 2.6208764473832513px 0 1px rgba(0, 30, 255, 0.5),
+			-2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3),
+			0 0 3px;
+	}
+}
+
+@keyframes borderShadow {
+    0% {
+        box-shadow: 0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    5% {
+        box-shadow: 2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.7928974010788217px 0 2px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    10% {
+        box-shadow: 0.02956275843481219px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.02956275843481219px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    15% {
+        box-shadow: 0.40218538552878136px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.40218538552878136px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    20% {
+        box-shadow: 3.4794037899852017px 0 1px rgba(0, 30, 255, 0.5),
+                    -3.4794037899852017px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    25% {
+        box-shadow: 1.6125630401149584px 0 1px rgba(0, 30, 255, 0.5),
+                    -1.6125630401149584px 0 2px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    30% {
+        box-shadow: 0.7015590085143956px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.7015590085143956px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    35% {
+        box-shadow: 3.896914047650351px 0 1px rgba(0, 30, 255, 0.5),
+                    -3.896914047650351px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    40% {
+        box-shadow: 3.870905614848819px 0 1px rgba(0, 30, 255, 0.5),
+                    -3.870905614848819px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    45% {
+        box-shadow: 2.231056963361899px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.231056963361899px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    50% {
+        box-shadow: 0.08084290417898504px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.08084290417898504px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    55% {
+        box-shadow: 2.3758461067427543px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.3758461067427543px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    60% {
+        box-shadow: 2.202193051050636px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.202193051050636px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    65% {
+        box-shadow: 2.8638780614874975px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.8638780614874975px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    70% {
+        box-shadow: 0.48874025155497314px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.48874025155497314px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    75% {
+        box-shadow: 1.8948491305757957px 0 1px rgba(0, 30, 255, 0.5),
+                    -1.8948491305757957px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    80% {
+        box-shadow: 0.0833037308038857px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.0833037308038857px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    85% {
+        box-shadow: 0.09769827255241735px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.09769827255241735px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    90% {
+        box-shadow: 3.443339761481782px 0 1px rgba(0, 30, 255, 0.5),
+                    -3.443339761481782px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    95% {
+        box-shadow: 2.1841838852799786px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.1841838852799786px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    100% {
+        box-shadow: 2.6208764473832513px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+}
+
+
+.scanline { /* this is the vcr line that scrolls down the screen */
+    width: 100%;
+    height: 100px;
+    z-index: 8;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(255, 255, 255, 0.2) 10%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    opacity: 0.1;
+    position: absolute;
+    bottom: 100%;
+    animation: scanline 10s linear infinite;
+    pointer-events: none;	
+}
+
+
+@keyframes scanline {
+    0% {
+        bottom: 100%;
+    }
+    80% {
+        bottom: 100%;
+    }
+    100% {
+        bottom: 0%;
+    }
+}
+
+.cristal { /* this makes the lines on the screen */
+    pointer-events: none;	
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 60%;
+    cursor: url(cursors/point.cur), auto; 
+
+	background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 3px, 2px 100%;
+	
+}
+/* INSIDE TV */
+
+#screen {
+    position: relative;
+	background-image: url(https://media.giphy.com/media/4heseFMvObk9q/giphy.gif?cid=790b7611etr1sfv708fet09vvqdt7shpnxqvzmrcb5tw2nns&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-color: #000000;
+    padding: 5px 5px 5px 5px;
+    width: 92%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: auto;
+    overflow: hidden;
+    cursor: url(cursors/point.cur), auto;
+    font-family: "WebPlus_IBM_VGA_8x16", Inconsolata, monospace;
+	font-size: 24px;
+	text-shadow: 0 0 5px #707070;
+	animation: textShadow 0.15s infinite;
+    cursor: url(cursors/point.cur), auto;
+}
+
+        .wrapper { /* this is the "room" inside the tv */
+    width: 93%;
+    height: 93%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(0, 0, 0);
+    background-image: url(images/indexbg.png);
+    filter: sepia(20%) brightness(120%) hue-rotate(35deg) saturate(120%) contrast(101%);
+    background-size: cover; 
+    background-position: top left; 
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+nav { /* THE BUTTONS DONT LEAD ANYWHERE SORRY. i just put it in so that i could get the menu mark */
+        position: relative;
+        width: 100%;
+        height: 5px;
+        background-color: #000000;
+        color: rgb(0, 0, 0);
+        margin: 10px 0px 8px 0px;
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+
+      nav a {
+        margin: 0 16px;
+        padding: 6px;
+        color: #1fc708;
+        text-decoration: none;
+        font-family: 'VintageMoon', sans-serif;
+        background-color: #000000;
+        letter-spacing: 1px;
+        text-align: center;
+        height: 50px;
+        width: 70px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        z-index: 5;
+        transform: translate(0px, -12px) !important;
+      }
+
+      nav a:hover {
+        color: #ffffff;
+        cursor: url(cursors/point.cur), auto;
+      }
+
+      marquee { /* scrolly thing that goes across the menu. the binary says "help me" or something similar */
+        position: absolute;
+        color: #1fc708;
+        opacity: 30%;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        font-size: 24px;
+        z-index: 0; 
+        pointer-events: none; /* so that it doesnt change the cursor to the text one when its hovered on */
+        animation: textShadow 3s infinite;
+}
+        img {
+            position: absolute;
+            display: block;
+            cursor: pointer;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+#kittyoverlay { /* individually placed overlays. they are absolute so they are supposed to stay placed correctly on the backgronud image. they work sometimes. it's a little bit hit or miss. */
+    position: absolute;
+    top: 42%; 
+    left: 20.7%; 
+    width: 8.9%;
+    height: auto;
+    opacity: 0;
+    cursor: url(cursors/pet.cur), auto; /* changes the cursor to a hand so you can pet the kitty */
+}
+
+#guitaroverlay {
+    position: absolute;
+    top: 45.6%; 
+    left: 26.7%; 
+    width: 10.5%;
+    height: auto;
+    opacity: 0;
+    cursor: url(cursors/pick.cur), auto; /* guitar pick cursor */
+}
+
+#bookoverlay {
+    position: absolute;
+    top: 78.2%; 
+    left: 53.7%; 
+    width: 5.7%;
+    height: auto;
+    opacity: 0;
+    cursor: url(cursors/point.cur), auto;
+}
+
+
+#recordoverlay {
+    position: absolute;
+    top: 22.7%;
+    left: 74.6%;
+    width: 13.1%;
+    height: auto;
+    opacity: 0;
+    cursor: url(cursors/music.cur), auto; /* music note for the record player */
+}
+
+#poster1overlay {
+    position: absolute;
+    top: 9%;
+    left: 57% ; 
+    width: 14.1%;
+    height: auto;
+    opacity: 0;
+    cursor: url(cursors/point.cur), auto;
+}
+
+#poster2overlay {
+    position: absolute;
+    top: 1.8%; 
+    left: 41%; 
+    width: 19.1%;
+    height: auto;
+    opacity: 0;
+    cursor: url(cursors/point.cur), auto;
+}
+
+#poster3overlay {
+    position: absolute;
+    top: 6.6%; 
+    left: 29.5%; 
+    width: 14.5%;
+    height: auto;
+    opacity: 0;
+    cursor: url(cursors/point.cur), auto;
+}
+
+#firelight {
+    position: absolute;
+    top: 61%;
+    left: 55%;
+    width: 7%;
+    animation: lamp 5s infinite;
+    cursor: url(cursors/point.cur), auto;
+}
+
+#burntstar { 
+    position: absolute;
+    top: 5.6%;
+    left: 65.63%;
+    width: 1.32%;
+    animation: burnt 3s infinite;
+    cursor: url(cursors/point.cur), auto;
+}
+
+        /* makes the opacity higher when you hover on the items */
+        #bookoverlay:hover,
+        #recordoverlay:hover,
+        #guitaroverlay:hover,
+        #kittyoverlay:hover,
+        #poster1overlay:hover,
+        #poster2overlay:hover,
+        #poster3overlay:hover {
+            opacity: 0.3;
+        }
+
+        /* animations for the lamp and for the little star */
+        @keyframes lamp {
+            0%, 100% { opacity: 1; }
+            25% { opacity: 0.6; }
+            50% { opacity: 0.4; }
+            75% { opacity: 0.8; }
+        }
+
+        @keyframes burnt {
+            0% { opacity: .9; }
+            10% { opacity: 0; }
+            20% { opacity: 0; }
+            30% { opacity: .9; }
+            40% { opacity: 0; }
+            50% { opacity: .9; }
+            60% { opacity: .9; }
+            70% { opacity: .9; }
+            80% { opacity: 0; }
+            90% { opacity: .9; }
+            100% { opacity: 0; }
+        }
+
+
+
+    </style>
+</style>
+        </head>
+        <body>
+            <img class="crt-frame" src="images/crt.png">
+            <div id="screen"> 
+
+                <nav>
+
+                    <marquee> 01000111 01000101 01010100 00100000 01001101 01000101 00100000 01001111 01010101 01010100 00100000 01001111 01000110 00100000 01001000 01000101 01010010 01000101 </marquee>
+
+                    <a href="#home">Buttons</a>
+                    <a href="#about">Don't</a>
+                    <a href="#contact">Work</a>
+                    <a href="#meow">Intentionally</a>
+                  </nav>
+
+                <div class="wrapper">
+                    <a href="BOOK.html">
+                        <img src="images/bookoverlay.png" id="bookoverlay">
+                    </a>
+                    <a href="RECORD.html">
+                        <img src="images/recordoverlay.png" id="recordoverlay">
+                    </a>
+
+                    <img src="images/guitaroverlay.png" id="guitaroverlay" onclick="playGuitarSound()">
+                    <img src="images/kittyoverlay.png" id="kittyoverlay" onclick="playKittySound()">
+
+                    <a href="P1.html">
+                        <img src="images/poster1overlay.png" id="poster1overlay">
+                    </a>
+                    <a href="P2.html">
+                        <img src="images/poster2overlay.png" id="poster2overlay">
+                    </a>
+                    <a href="P3.html">
+                        <img src="images/poster3overlay.png" id="poster3overlay">
+                    </a>
+                    <img src="images/firelight.png" id="firelight">
+                    <img src="images/burntstar.png" id="burntstar">
+                </div>
+              <div class="scanline"></div>
+              <img class="cristal" id="image" src="images/dust.png" style="position: fixed; left:0; top:0">
+          </div>
+
+          <script>
+            function playKittySound() { //kitty!!!!
+                const audio = new Audio('audio/kitty.mp3');
+                audio.play();
+            }
+    
+            function playGuitarSound() { //plays the strumming sound when you click the guitar
+                const audio = new Audio('audio/guitar.mp3');
+                audio.play();
+            }
+        </script>
+
+          </body>
+</html>

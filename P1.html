@@ -1,0 +1,383 @@
+<html> 
+    <head>
+          <title>Q0TS4_0062_95</title>
+            
+<style>
+
+@font-face {
+    font-family: 'VintageMoon';
+    src: url('fonts/Vintage\ Moon\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	overflow: hidden;
+	font-family:  "WebPlus_IBM_VGA_8x16", Inconsolata, monospace;
+	font-weight:normal;
+	font-style:normal;
+	font-size: 1em;
+	color: #000000;
+    background-color: #000000;
+    background-image: url(https://media.giphy.com/media/4heseFMvObk9q/giphy.gif?cid=790b7611etr1sfv708fet09vvqdt7shpnxqvzmrcb5tw2nns&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    cursor: url(cursors/point.cur), auto;
+}
+
+.crt-frame {
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: url(cursors/point.cur), auto;
+}
+
+
+@keyframes borderShadow {
+    0% {
+        box-shadow: 0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    5% {
+        box-shadow: 2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.7928974010788217px 0 2px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    10% {
+        box-shadow: 0.02956275843481219px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.02956275843481219px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    15% {
+        box-shadow: 0.40218538552878136px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.40218538552878136px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    20% {
+        box-shadow: 3.4794037899852017px 0 1px rgba(0, 30, 255, 0.5),
+                    -3.4794037899852017px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    25% {
+        box-shadow: 1.6125630401149584px 0 1px rgba(0, 30, 255, 0.5),
+                    -1.6125630401149584px 0 2px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    30% {
+        box-shadow: 0.7015590085143956px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.7015590085143956px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    35% {
+        box-shadow: 3.896914047650351px 0 1px rgba(0, 30, 255, 0.5),
+                    -3.896914047650351px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    40% {
+        box-shadow: 3.870905614848819px 0 1px rgba(0, 30, 255, 0.5),
+                    -3.870905614848819px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    45% {
+        box-shadow: 2.231056963361899px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.231056963361899px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    50% {
+        box-shadow: 0.08084290417898504px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.08084290417898504px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    55% {
+        box-shadow: 2.3758461067427543px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.3758461067427543px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    60% {
+        box-shadow: 2.202193051050636px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.202193051050636px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    65% {
+        box-shadow: 2.8638780614874975px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.8638780614874975px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    70% {
+        box-shadow: 0.48874025155497314px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.48874025155497314px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    75% {
+        box-shadow: 1.8948491305757957px 0 1px rgba(0, 30, 255, 0.5),
+                    -1.8948491305757957px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    80% {
+        box-shadow: 0.0833037308038857px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.0833037308038857px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    85% {
+        box-shadow: 0.09769827255241735px 0 1px rgba(0, 30, 255, 0.5),
+                    -0.09769827255241735px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    90% {
+        box-shadow: 3.443339761481782px 0 1px rgba(0, 30, 255, 0.5),
+                    -3.443339761481782px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    95% {
+        box-shadow: 2.1841838852799786px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.1841838852799786px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+    100% {
+        box-shadow: 2.6208764473832513px 0 1px rgba(0, 30, 255, 0.5),
+                    -2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3),
+                    0 0 3px;
+    }
+}
+
+
+.scanline {
+    width: 100%;
+    height: 100px;
+    z-index: 8;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(255, 255, 255, 0.2) 10%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    opacity: 0.1;
+    position: absolute;
+    bottom: 100%;
+    animation: scanline 10s linear infinite;
+    pointer-events: none;	
+}
+
+
+@keyframes scanline {
+    0% {
+        bottom: 100%;
+    }
+    80% {
+        bottom: 100%;
+    }
+    100% {
+        bottom: 0%;
+    }
+}
+
+.cristal {
+    pointer-events: none;	
+    overflow: hidden;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 60%;
+    cursor: url(cursors/point.cur), auto;
+
+	background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 3px, 2px 100%;
+	
+}
+/* INSIDE TV */
+
+#screen {
+    position: relative;
+	background-image: url(https://media.giphy.com/media/4heseFMvObk9q/giphy.gif?cid=790b7611etr1sfv708fet09vvqdt7shpnxqvzmrcb5tw2nns&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-color: #000000;
+    padding: 5px 5px 5px 5px;
+    width: 92%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: auto;
+    overflow: hidden;
+    cursor: url(cursors/point.cur), auto;
+    font-family: "WebPlus_IBM_VGA_8x16", Inconsolata, monospace;
+	font-size: 24px;
+	text-shadow: 0 0 5px #707070;
+	animation: textShadow 0.15s infinite;
+    cursor: url(cursors/point.cur), auto;
+}
+
+        .wrapper {
+    width: 93%;
+    height: 93%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(0, 0, 0);
+    background-image: url(images/blurbg.png);
+    filter: sepia(20%) brightness(120%) hue-rotate(35deg) saturate(120%) contrast(101%);
+    background-size: cover; 
+    background-position: top left; 
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+nav {
+        position: relative;
+        width: 100%;
+        height: 5px;
+        background-color: #000000;
+        color: rgb(0, 0, 0);
+        margin: 10px 0px 8px 0px;
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+
+      nav a {
+        margin: 0 16px;
+        padding: 6px;
+        color: #1fc708;
+        text-decoration: none;
+        font-family: 'VintageMoon', sans-serif;
+        background-color: #000000;
+        letter-spacing: 1px;
+        text-align: center;
+        height: 50px;
+        width: 70px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        z-index: 5;
+        transform: translate(0px, -12px) !important;
+      }
+
+      nav a:hover {
+        color: #ffffff;
+        cursor: url(cursors/point.cur), auto;
+      }
+
+      marquee {
+        position: absolute;
+        color: #1fc708;
+        opacity: 30%;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        font-size: 24px;
+        z-index: 0; 
+        pointer-events: none;	
+        animation: textShadow 3s infinite;
+}
+        img {
+            position: absolute;
+            display: block;
+            cursor: pointer;
+            transition: opacity 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+        }
+
+
+        #backbutton {
+        position: absolute;
+        top: 5% !important;
+        left: 4.5% !important;
+        cursor: url(cursors/point.cur), auto;
+}
+
+#backbutton img { 
+  width: 200px;
+  height: auto;
+  z-index: 2;
+  filter: sepia(20%) brightness(90%) hue-rotate(35deg) saturate(120%) contrast(101%);
+    background-size: cover; 
+    cursor: url(cursors/point.cur), auto;
+}
+    button:hover img {
+      transform: scale(1.1); /* makes the button bigger when you hover */
+      cursor: url(cursors/point.cur), auto;
+    }
+
+    #tiltingImage {    
+  transition: transform 0.2s ease; /* make the tilt smooth */
+  transform-style: preserve-3d;   /* make it able to tilt in 3d to make it look more real. real?? idk what i mean by that */
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.9);
+  transition: box-shadow 0.3s ease-in-out; /* smoother box shadow transition */
+  cursor: url(cursors/point.cur), auto;
+}
+    </style>
+</style>
+        </head>
+        <body>
+            <img class="crt-frame" src="images/crt.png">
+            <div id="screen"> 
+
+                <nav>
+
+                    <marquee> 01000111 01000101 01010100 00100000 01001101 01000101 00100000 01001111 01010101 01010100 00100000 01001111 01000110 00100000 01001000 01000101 01010010 01000101 </marquee>
+
+                    <a href="#home">Buttons</a>
+                    <a href="#about">Don't</a>
+                    <a href="#contact">Work</a>
+                  </nav>
+
+                  <button id="backbutton" style="border: black; padding: 0; background: none; width: 20%;" onclick="window.location.href='HOME.html'">
+                    <img src="images/backbutton.png" style="transition: transform 0.3s;">
+                  </button>
+              
+                <div class="wrapper">
+                    <img src="images/poster1.jpg" id="tiltingImage" alt="Tilted Image" style="width: 24%; height: auto;">
+
+                    <script>
+                        const image = document.getElementById('tiltingImage');
+                    
+                    image.addEventListener('mousemove', (e) => {
+                      // get the position of the mouse 
+                      const rect = image.getBoundingClientRect(); //relative to the image
+                      const x = e.clientX - rect.left; // x position on the poster
+                      const y = e.clientY - rect.top;  // y position on the poster
+
+                      // make it tilt a certain amount
+                      const xPercent = (x / rect.width) - 0.5; // -0.5 to 0.5 range
+                      const yPercent = (y / rect.height) - 0.5; // also -0.5 to 0.5 range
+                    
+                      const tiltFactor = 30; // make it higher for a more dramatic tilt amount
+                      const rotateX = yPercent * tiltFactor;
+                      const rotateY = -xPercent * tiltFactor;
+                    
+                      // applys the tilt to the picture
+                      image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                    });
+                    
+                    // makes the image normal again after you stop hovering on it
+                    image.addEventListener('mouseleave', () => {
+                      image.style.transform = 'rotateX(0deg) rotateY(0deg)';
+                    });
+                    </script>
+                    
+                </div>
+              <div class="scanline"></div>
+              <img class="cristal" id="image" src="images/dust.png" style="position: fixed; left:0; top:0">
+          </div>
+
+
+          </body>
+</html>
